@@ -1,11 +1,14 @@
-import "./App.css"
-import "./Navbar.jsx"
-import Navbar from "./Navbar.jsx"
-function App() {
-  <>
-  return <Navbar />
-  <h1>hola</h1>
-  </>
-}
+import React from 'react'
+import NavBar from './components/Navbar';
+import ItemListContainer from './components/ItemListContainer';
 
-export default App
+const App = () => {
+  return (
+    <div>
+      <NavBar />
+      <ItemListContainer message="¡Bienvenido a nuestra tienda!" />
+    </div>
+  );
+};
+
+export default App;
